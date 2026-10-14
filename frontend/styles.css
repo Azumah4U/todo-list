@@ -7,3 +7,69 @@ button { padding: 10px 20px; background: #007bff; color: white; border: none; bo
 button:hover { background: #0056b3; }
 li { list-style: none; padding: 10px; background: #f9f9f9; margin-bottom: 8px; border-radius: 5px; display: flex; justify-content: space-between; }
 .completed { text-decoration: line-through; color: gray; }
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #f5f5f5;
+    border-bottom: 2px solid #ddd;
+}
+
+.profile-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.todo-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: white;
+}
+
+.todo-item.completed {
+    background: #e8f5e9;
+    opacity: 0.8;
+}
+
+.todo-item.completed h2 {
+    text-decoration: line-through;
+}
+
+.todo-item.incomplete {
+    background: #fff;
+    border-left: 4px solid #ff9800;
+}
+
+.status {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.completed .status {
+    background: #4CAF50;
+    color: white;
+}
+
+.incomplete .status {
+    background: #ff9800;
+    color: white;
+}

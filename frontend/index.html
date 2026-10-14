@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Todo List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo List</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>My Todo List</h1>
-        <div class="input-area">
-            <input type="text" id="todoInput" placeholder="Add a new task...">
-            <button onclick="addTodo()">Add</button>
+    <header class="header">
+        <div class="profile-area">
+            <div class="profile-icon">A</div>
+            <span class="profile-name">Azumah</span>
         </div>
-        <ul id="todoList"></ul>
-    </div>
+        <h1>My Todo List</h1>
+    </header>
+
+    <main class="container">
+        <div id="todo-list">
+            <!-- Todos will be loaded by JavaScript from backend -->
+        </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
