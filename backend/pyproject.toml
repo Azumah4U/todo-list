@@ -1,0 +1,8 @@
+[project]
+name = "todo-list-backend"
+version = "0.1.0"
+description = "Todo List FastAPI backend"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]",
+]
